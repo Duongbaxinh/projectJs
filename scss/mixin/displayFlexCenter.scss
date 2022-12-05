@@ -1,0 +1,29 @@
+@import "../variable/color.scss";
+@import "../font.scss";
+
+@mixin displayFlexCenter($alie:center,$justi:center,$gap:0) {
+    display: flex;
+    justify-content: $justi;
+    align-items: $alie;
+    gap: $gap;
+    
+}
+@mixin padding($top:0,$right:0,$bottom:0,$left:0) {
+    padding: $top $right $bottom $left;
+    box-sizing: border-box;
+}
+@mixin  flexColunm($flex:column,$self-alie:center,$justi:center,$gap:0) {
+    display: flex;
+    flex-direction: $flex;
+    align-self: $self-alie;
+    justify-content: $justi;
+    gap: $gap;
+}
+@mixin position($posi:absolute,$top:0,$right:0,$bottom:0,$left:0,$z-index:0) {
+    position: $posi;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+}

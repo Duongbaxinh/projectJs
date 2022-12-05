@@ -1,0 +1,23 @@
+
+.Main{
+    width: 100%;
+     padding: 0 150px;
+    box-sizing: border-box;
+}
+img{
+    width: 100px;
+}
+table {
+    margin-top: 100px;
+    border-collapse: collapse;
+    width: 100%;
+   
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color: coral;}

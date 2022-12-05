@@ -1,0 +1,53 @@
+@import "../css/container.css";
+@import "../scss/font.scss";
+@import "../scss/mixin/button.scss";
+@import "../scss/mixin/displayFlexCenter.scss";
+@import "../scss/variable/color.scss";
+@import "../scss/mixin/typo.scss";
+
+.header {
+    position: fixed;
+    background-color: $white;
+    @include padding(30px, 150px, 0, 150px);
+    left: 0;
+    width: 100%;
+    height: auto;
+    @include displayFlexCenter($justi: space-between, $gap: 35px);
+    color: $black;
+    z-index: 3;
+    &__links {
+      flex-grow: 1;
+      @include body3;
+      @include displayFlexCenter($justi: flex-start, $gap: 40px);
+      *:hover {
+        color: $primary;
+      }
+      &--login{
+        position: relative;
+        width: auto;
+        @include padding(5px,10px,5px,10px);
+        @include displayFlexCenter($justi:flex-start,$gap:10px);
+        @include heading4;
+        color: $white;
+        font-size: 32px;
+        background-color: $primary;
+        border-radius: 10px;
+      }
+      &--dot{
+        
+        width: 15px;
+        height: 15px;
+        top: -10px;
+        right:0;
+        @include displayFlexCenter;
+        font-size: 10px;
+        background-color: $mediumGray;
+        color: $black;
+        border-radius: 50%;
+        position: absolute;
+      }
+    }
+    &__button {
+      @include buttonStyle();
+    }
+  }

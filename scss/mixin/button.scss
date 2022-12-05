@@ -1,0 +1,23 @@
+@import "../variable/color.scss";
+@import "../font.scss";
+@mixin buttonStyle($color: $primary, $colors: $white) {
+  padding: 13px 30px 14px 30px;
+  background-color:  $color;
+  color: $colors;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover{
+    @if($color == $primary){
+        background-color: darken($primary,10%);
+    }
+    @else{
+       background-color: darken($color,10%); 
+    }
+  }
+}

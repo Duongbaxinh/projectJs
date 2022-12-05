@@ -1,0 +1,115 @@
+@import "../scss/base.scss";
+@import "../scss/font.scss";
+@import "../scss/mixin/button.scss";
+@import "../scss/mixin/displayFlexCenter.scss";
+@import "../scss/variable/color.scss";
+@import "../scss/mixin/typo.scss";
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    @include displayFlexCenter;
+}
+.login__main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   padding: 20px 150px;
+   gap: 32px;
+   box-sizing: border-box;
+   background-color: #FBF1E7;
+
+}
+.image{
+    width: 50%;
+    height: auto;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 0 0 17px $primary;
+}
+.form{
+    @include displayFlexCenter();
+    flex-direction: column;
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 0 0 17px $primary;
+    padding: 20px 10px;
+    &__title{
+        @include padding(20px,150px,0,150px);
+        display: flex;
+        gap: 50px;
+        justify-content: flex-end;
+      
+    }
+    &__login{
+        position: relative;
+        @include body3;
+        width: 150px;
+        height: 50px;
+        @include displayFlexCenter;
+        border-radius: 50px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: pink;
+    }
+    &__header{
+        width: 150px;
+        height: 40px;
+        @include displayFlexCenter;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        background-color: pink;
+    }
+    &__control{
+        width: 100%;
+        padding-bottom: 20px;
+        & small{
+         visibility: hidden;
+        }
+    }
+    &__lable{
+        display: block;
+        color: rgb(245, 7, 170);
+        margin-bottom: 7px;
+        @include body3;
+    }
+    &__input{
+        border: 2px solid #f0f0f0;
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  box-sizing: border-box;
+  
+  font-size: 14px;
+  border: 1px solid rgb(151, 211, 32);
+    }
+    &__submit{
+    
+    cursor: pointer;
+width: 100%;
+border-radius: 50px;
+border-color: #3498db;
+height: 50px;
+    }
+}
+
+
+
+
+/////@at-rootjs
+
+.succed{
+    border-color: rgb(84, 254, 84) ;
+    & small{
+        visibility: hidden;
+    }
+}
+.error{
+    border-color: rgb(241, 96, 12) ;
+    color: red;
+    & small{
+        visibility: visible;
+    }
+}

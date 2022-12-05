@@ -1,0 +1,84 @@
+@import "../variable/color.scss";
+@import "../font.scss";
+
+@mixin heading1($text-aline: left) {
+  font-family: "Philosopher";
+font-size: 49px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0em;
+  text-align: $text-aline;
+}
+@mixin heading2($text-aline: left) {
+  font-family: "Philosopher";
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: $text-aline;
+}
+@mixin heading3($text-aline: left) {
+  font-family: "Philosopher";
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: $text-aline;
+}
+@mixin heading4($text-aline: left) {
+  font-family: "Philosopher";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: $text-aline;
+}
+
+@mixin body1($text-aline: left) {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: $text-aline;
+}
+@mixin body2($text-aline: left) {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: $text-aline;
+}
+@mixin body3($text-aline: left) {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: $text-aline;
+  }
+  @mixin body4($text-aline: left) {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: $text-aline;
+  }
+  @mixin body5($text-aline: left) {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: $text-aline;
+  }
+@mixin lable($text-aline: left) {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-align: $text-aline;
+}

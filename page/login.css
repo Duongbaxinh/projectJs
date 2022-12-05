@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.login__main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 150px;
+  gap: 32px;
+  box-sizing: border-box;
+  background-color: #FBF1E7;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
+  object-fit: cover;
+  box-shadow: 0 0 17px #DC780B;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: 0 0 17px #DC780B;
+  padding: 20px 10px;
+}
+.form__title {
+  padding: 20px 150px 0 150px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
+}
+.form__login {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: pink;
+}
+.form__header {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background-color: pink;
+}
+.form__control {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.form__control small {
+  visibility: hidden;
+}
+.form__lable {
+  display: block;
+  color: rgb(245, 7, 170);
+  margin-bottom: 7px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.form__input {
+  border: 2px solid #f0f0f0;
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid rgb(151, 211, 32);
+}
+.form__submit {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 50px;
+  border-color: #3498db;
+  height: 50px;
+}
+
+.succed {
+  border-color: rgb(84, 254, 84);
+}
+.succed small {
+  visibility: hidden;
+}
+
+.error {
+  border-color: rgb(241, 96, 12);
+  color: red;
+}
+.error small {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=login.css.map */

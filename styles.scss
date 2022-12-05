@@ -1,0 +1,509 @@
+@import "./scss/base.scss";
+@import "./scss/font.scss";
+@import "./scss/mixin/button.scss";
+@import "./scss/mixin/displayFlexCenter.scss";
+@import "./scss/variable/color.scss";
+@import "./scss/mixin/typo.scss";
+
+
+
+.Hero {
+  @include displayFlexCenter;
+  position: relative;
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+  &__buttonSide{
+    position:absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    z-index: 10;
+    &--next{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: silver;
+      @include displayFlexCenter;
+    }
+    &--pre{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: silver;
+      @include displayFlexCenter;
+    }
+  }
+  &__Groupitem
+{
+  position: relative;
+  transition: 1s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+&__item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+  &__content {
+    width: 555px;
+    height: 246px;
+    @include position(absolute, 236px, 732px, 0, 150px, 1);
+    &--title {
+      @include heading1;
+    }
+    &--des {
+      margin-top: 42px;
+      @include body4;
+      color: $black;
+    }
+    &--groupButton {
+      margin-top: 50px;
+      @include displayFlexCenter($justi: flex-start, $gap: 30px);
+    }
+    &--btnleft {
+      color: $white;
+      @include buttonStyle;
+    }
+    &--btnright {
+      @include buttonStyle($white);
+      border: 1px solid $primary;
+      color: $primary;
+    }
+  }
+  &__background {
+    width: 801px;
+    height: auto;
+    margin-left: 800px;
+    z-index: -1;
+  }
+}
+.none{
+  display: none;
+}
+.Order{
+  position: absolute;
+  border-radius: 10px 0 10px 10px;
+  width: 500px;
+  height: auto;
+  padding: 10px 30px;
+  height: auto;
+  right: 0px;
+  top: 68px;
+  @include body1;
+  background-color: rgb(243, 208, 208);
+  &::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    top: -30px;
+    right: 0;
+    position:absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid  rgb(243, 208, 208);
+  }
+  &__item{
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  &__main{
+    margin-top: 20px;
+    display: flex;
+    &--image{
+      width: 100px;
+      height: 100px;
+    }
+    &--title{
+      @include heading3;
+    }
+    &--note{
+      width: 100%;
+      height: 50px;
+      display: none;
+    }
+    
+  }
+  &__calculate{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    &--price{
+      @include heading4;
+    }
+    &--quantity{
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+}
+.feature {
+  width: 100%;
+  height: 333px;
+  @include padding(0, 180px, 0, 180px);
+  &__content {
+    width: 100%;
+    &--label {
+      @include lable(center);
+      text-transform: uppercase;
+    }
+    &--title {
+      @include heading3(center);
+    }
+  }
+  &__item {
+    width: 100%;
+    @include displayFlexCenter($gap: 90px);
+  }
+  &__delivery {
+    width: 300px;
+    height: 288px;
+    @include displayFlexCenter;
+    flex-direction: column;
+    &--background {
+      @include displayFlexCenter;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background-color: $lightGrayBg;
+    }
+    &--title {
+      margin-top: 33px;
+      @include heading4;
+    }
+    &--des {
+      @include body1(center);
+      margin-top: 15px;
+      color: $mediumGray;
+    }
+  }
+}
+.aboutUs {
+  position: relative;
+  margin-top: 109px;
+  width: 100%;
+  height: 586px;
+  @include padding(0, 150px, 0, 150px);
+  @include displayFlexCenter($gap: 98px);
+  &__image {
+    width: 555px;
+    height: 501px;
+    border-radius: 30px;
+  }
+  &__content {
+    width: 487px;
+    height: auto;
+    &--lable {
+      @include lable;
+      text-transform: uppercase;
+    }
+    &--title {
+      @include heading3;
+      padding: 10px 0 20px 0;
+    }
+    &--des {
+      @include body1;
+      color: $mediumGray;
+    }
+    &--btn {
+      margin-top: 29px;
+      @include buttonStyle();
+    }
+  }
+  &__background {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+}
+.menu {
+  margin-top: 44px;
+  width: 100%;
+  height: 1220px;
+  @include padding(0, 150px, 0, 150px);
+  &__header {
+    width: 100%;
+    @include displayFlexCenter;
+    flex-direction: column;
+    &--wrape {
+      width: 748px;
+      height: auto;
+      text-align: center;
+      @include displayFlexCenter;
+      flex-direction: column;
+    }
+    &--lable {
+      @include lable;
+      color: $primary;
+      text-transform: uppercase;
+    }
+    &--title {
+      margin-top: 9;
+      @include heading3;
+    }
+    &--des {
+      margin-top: 25px;
+      @include body1(center);
+    }
+  }
+  &__main {
+    margin-top: 60px;
+    width: 100%;
+    @include displayFlexCenter($gap: 40px);
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 360px;
+    height: 446px;
+    &--image {
+      width: 360px;
+      height: 264px;
+      border-radius: 76px 10px 76px 0;
+    }
+    &--title {
+      margin-top: 21px;
+      @include displayFlexCenter($justi: space-between);
+      padding: 0 25px;
+      box-sizing: border-box;
+      @include heading4;
+    }
+    &--des {
+      margin-top: 20px;
+      padding: 0 25px;
+      box-sizing: border-box;
+      @include body1;
+      color: $mediumGray;
+    }
+    &--end {
+      @include displayFlexCenter($justi: space-between);
+      margin-top: 20px;
+      padding: 0 25px;
+      box-sizing: border-box;
+    }
+    &--btn {
+      width: 36px;
+      height: 34px;
+      background-color: $primary;
+      cursor: pointer;
+      border: 0;
+      *{
+        color: $white;
+      }
+    }
+  }
+  &__footer {
+    margin-top: 50px;
+    width: 100%;
+    @include displayFlexCenter;
+    &--btn {
+      color: $primary;
+      @include buttonStyle($color:$white,$colors:$primary);
+      border: 1px solid $mediumGray;
+    }
+  }
+}
+.dowload {
+  position: relative;
+  margin-top: 187px;
+  width: 100%;
+  height: 658px;
+  @include displayFlexCenter;
+  &__content {
+    width: 100%;
+    height: 518px;
+    @include padding(67px, 0, 73px, 0);
+    background-color: $footerBg;
+  }
+  &__text {
+    width: 555px;
+    height: 275px;
+    @include position($top: 181px, $right: 638px, $bottom: 202px, $left: 247px);
+    &--lable {
+      text-transform: uppercase;
+      @include lable;
+      color: $primary;
+    }
+    &--title {
+      @include heading2;
+    }
+    &--des {
+      margin-top: 29px;
+      @include body1;
+      color: $black;
+    }
+  }
+  &__groupButton {
+    margin-top: 39px;
+    @include displayFlexCenter($justi: flex-start, $gap: 30px);
+    &--left {
+      color: $mediumGray;
+      @include displayFlexCenter($gap: 10px);
+      @include buttonStyle($black,$mediumGray);
+    }
+    &--right {
+      @include buttonStyle($white,$black);
+      @include displayFlexCenter($gap: 10px);
+    }
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 245px;
+    border-radius: 59px;
+  }
+}
+.testimonate {
+  position: relative;
+  margin-top: 78px;
+  width: 100%;
+  height: 476px;
+  &__content {
+    @include position(absolute, 0, 314px, 0, 322px);
+    @include displayFlexCenter;
+    flex-direction: column;
+  }
+  &__header {
+    width: 804px;
+    &--lable {
+      @include lable(center);
+      color: $primary;
+      text-transform: uppercase;
+    }
+    &--title {
+        margin-top: 36px;
+      font-family: "Philosopher";
+      font-size: 31px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    &--des{
+        margin-top: 23px;
+        @include body1(center);
+    }
+  }
+  &__side{
+    margin-top: 73px;
+    width: 506px;
+    @include displayFlexCenter();
+    flex-direction: column;
+    &--image{
+        border-radius: 50%;
+    }
+    &--des{
+        margin-top: 41px;
+        @include body1(center);
+    }
+    &--groupStar{
+        margin-top: 20px;
+    }
+    &--title{
+        margin-top: 32px;
+        @include lable(center);
+        text-transform: uppercase;
+    }
+    &--lable{
+        margin-top: 6px;
+        @include lable(center);
+        text-transform: uppercase;
+    }
+  }
+}
+.contact{
+    margin-top: 120px;
+    position: relative;
+    width: 100%;
+    height: 448px;
+    z-index: 1;
+    @include displayFlexCenter();
+    &__background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        opacity: 0.1;
+        z-index: 0;
+    }
+    &__content{
+        position: absolute;
+        width: 750px;
+        height: 216px;
+        @include displayFlexCenter();
+        flex-direction: column;
+        z-index: 5;
+        &--lable{
+            @include lable;
+            color: $primary;
+            text-transform: uppercase;
+        }
+        &--title{
+            @include heading2(center);
+        }
+
+    }
+    &__search{
+        position: relative;
+        margin-top: 46px;
+        width: 100%;
+        height: 75px;
+        @include displayFlexCenter($justi:space-between);
+        &--input{
+            position: absolute;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            outline: none;
+            border-radius: 10px;
+            @include body5();
+        }
+        &--btn{
+            position: absolute;
+            @include buttonStyle;
+            @include body5(center);
+            width: 156px;
+            height: 100%;
+            right: 0;
+        }
+    }
+
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 429px;
+    background-color: $black;
+    color: $white;
+    &__item{
+      @include displayFlexCenter;
+      gap:30px;
+    }
+    &__list{
+        @include position(absolute,137px,150px,140px,150px);
+    }
+    &__links{
+      width: 262px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &--image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+}
