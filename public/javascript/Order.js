@@ -22,9 +22,9 @@ fetch('http://localhost:3000/api/catalogy/loadOrder').then(
 })
 
 function deleteOrder(id){ 
-    location.reload()
-    console.log(id)
-    fetch('http://localhost:3000/api/catalogy/deleteOrder',{
+   
+    
+        fetch('http://localhost:3000/api/catalogy/deleteOrder',{
         method:'POST',
         headers:{
             "Content-Type":"application/json"
@@ -33,8 +33,11 @@ function deleteOrder(id){
             id:id
         })
     }).then((data)=>{
+        
+             location.reload()
          
-        alert(data.message)
+
       
     })
+    
 }

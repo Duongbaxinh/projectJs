@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/container.css" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../css/Order.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
 
+<link rel="stylesheet" href="./pageDetail.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,9 +22,9 @@
             <img src="../public/image/logo.png" alt="" />
           </div>
           <div class="header__links">
-            <a  href="../index.html" class="header__links--home" id="hoe">Home</a>
+            <a href="../index.html" class="header__links--home" id="hoe">Home</a>
             <div class="header__links--home">About us</div>
-            <a href="../index.html#menu" class="header__links--home">Menu</a>
+            <div class="header__links--home">Menu</div>
             <div class="header__links--home">Feature</div>
             <div class="header__links--home">Contact us</div>
           </div>
@@ -45,29 +46,31 @@
               </div> 
               <hr>
           </a>
-          <div class="Main">
-<table>
-  <tr>
-    <th>AVATAR</th>
-    <th>FOODNAME</th>
-    <th>QUANTITY</th>
-    <th>PRICE</th>
-    <th>Action</th>
-  </tr>
-  <tbody id="tbody">
-   
-  </tbody>
-  
-  
-</table>
-          </div>
-
-
+    
+    <div class="Main">
+        <img  src="../public/image/food-gril.png" class="Main__image" />
+        <div class="Main__content">
+            <h3 class="Main__name" >Ga nuong</h3>
+            <p class="Main__des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maeriam iure</p>
+            <p class="Main__origin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio saepe temporibus recusandae </p>
+            <p class="Main__ingredient">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, facilis impedit adipisci officia placeat qui.</p>
+            <div class="Main__gia"><p class="Main__price">1000000000</p><span>$</span></div> 
+            <div class="Main__quantity">
+                <p>Quantity</p>
+                <div class="Main__group_Button">
+                    <button class="left" >-</button>
+                    <button class="number">1</button>
+                    <button class="right">+</button>
+                  </div>
+            </div>
+            <div class="Main__caculate">
+                <button class="Main__add">add to car</button>
+                <button class="Main__buy">Buy now</button>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
-
-
-
+<script src="../public/javascript/detail.js"></script>
+<script src="../public/javascript/slides.js"></script>
 <script src="../public/javascript/index.js"></script>
-<script src="../public//javascript/Order.js"></script>
 </html>

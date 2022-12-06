@@ -49,5 +49,6 @@
     }
     &__button {
       @include buttonStyle();
+      position: relative;
     }
   }

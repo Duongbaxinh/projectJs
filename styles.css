@@ -28,13 +28,21 @@ p {
   margin: 0;
 }
 
+.search {
+  position: absolute;
+  right: 450px;
+  top: 35px;
+  width: 400px;
+  height: 35px;
+}
+
 .Hero {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0;
   position: relative;
-  width: 100%;
+  width: 1600px;
   height: 670px;
   overflow: hidden;
 }
@@ -177,6 +185,8 @@ p {
   letter-spacing: 0em;
   text-align: left;
   background-color: rgb(243, 208, 208);
+  height: 60vh;
+  overflow: scroll;
 }
 .Order::after {
   content: " ";
@@ -384,7 +394,7 @@ p {
 .menu {
   margin-top: 44px;
   width: 100%;
-  height: 1220px;
+  height: auto;
   padding: 0 150px 0 150px;
   box-sizing: border-box;
 }
@@ -445,7 +455,7 @@ p {
 }
 .menu__item {
   width: 360px;
-  height: 446px;
+  height: auto;
 }
 .menu__item--image {
   width: 360px;
@@ -638,21 +648,33 @@ p {
 .testimonate {
   position: relative;
   margin-top: 78px;
+  width: 1440px;
+  height: auto;
+  overflow: hidden;
+}
+.testimonate__Group {
   width: 100%;
-  height: 476px;
+  height: auto;
+  display: flex;
+  transition: 1s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
 }
 .testimonate__content {
-  position: absolute;
-  top: 0;
-  right: 314px;
-  bottom: 0;
-  left: 322px;
-  z-index: 0;
+  padding: 0 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0;
   flex-direction: column;
+}
+.testimonate__content--button {
+  position: absolute;
+  top: 300px;
+  left: 450px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
 }
 .testimonate__header {
   width: 804px;

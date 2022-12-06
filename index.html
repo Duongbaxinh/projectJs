@@ -14,7 +14,7 @@
     />
   </head>
   <body >
-  
+  <div class="container">
       <div class="wraper">
         <div class="header">
           <div class="header__logo">
@@ -22,12 +22,14 @@
           </div>
           <div class="header__links">
             <div class="header__links--home" id="hoe">Home</div>
-            <div class="header__links--home">About us</div>
-            <div class="header__links--home">Menu</div>
-            <div class="header__links--home">Feature</div>
-            <div class="header__links--home">Contact us</div>
+            <a href="#aboutUs" class="header__links--home">About us</a>
+            <a href="#menu" class="header__links--home">Menu</a>
+            <a href="#feature" class="header__links--home">Feature</a>
+            <a href="#contact" class="header__links--home">Contact us</a>
           </div>
-          <button class="header__button">Search</button>
+          <button class="header__button">Search
+            <input class="search" type="text" value="search" id="searcj">
+          </button>
           <a href="./page/Login.html" class ="header__links--login">
             <i class="fa-solid fa-right-to-bracket"></i>
           </a>
@@ -63,9 +65,12 @@
                   Making time a good time by making food the good food.
                 </p>
                 <p class="Hero__content--des">
-                  There are many things are needed to start the Fast Food Business.
+                  "There are many things are needed to start the Fast Food Business.
                   You need not only Just Food Stalls with Persons but also
-                  specialized equipment,
+                  specialized equipment,"
+                </p>
+                <p class="Hero__content--price">
+                  10
                 </p>
                 <div class="Hero__content--groupButton">
                   <div class="Hero__content--btnleft">Order Now</div>
@@ -83,14 +88,17 @@
 
             <div class="Hero__item">
 
-              <div class="Hero__content">
+              <div class="Hero__content" >
                 <p class="Hero__content--title">
                   Making time a good time by making food the good food.
                 </p>
-                <p class="Hero__content--des">
+                <p class="Hero__content--des" >
                   There are many things are needed to start the Fast Food Business.
                   You need not only Just Food Stalls with Persons but also
                   specialized equipment,
+                </p>
+                <p class="Hero__content--price">
+                  10
                 </p>
                 <div class="Hero__content--groupButton">
                   <div class="Hero__content--btnleft">Order Now</div>
@@ -105,7 +113,7 @@
             </div>
 
             <!--  -->
-            <div class="Hero__item">
+            <div class="Hero__item" >
 
               <div class="Hero__content">
                 <p class="Hero__content--title">
@@ -115,6 +123,9 @@
                   There are many things are needed to start the Fast Food Business.
                   You need not only Just Food Stalls with Persons but also
                   specialized equipment,
+                </p>
+                <p class="Hero__content--price">
+                  10
                 </p>
                 <div class="Hero__content--groupButton">
                   <div class="Hero__content--btnleft">Order Now</div>
@@ -136,7 +147,7 @@
   
          
 
-      <div class="feature">
+      <div id="feature" class="feature">
         <div class="feature__content">
           <div class="feature__content--label">Features</div>
           <div class="feature__content--title">Food with a New Passion</div>
@@ -175,7 +186,7 @@
         </div>
       </div>
 
-      <div class="aboutUs">
+      <div id="aboutUs" class="aboutUs">
         <img src="./public/image/bannerGir.png" alt="" class="aboutUs__image">
         <div class="aboutUs__content">
           <p class="aboutUs__content--lable">About us</p>
@@ -187,7 +198,7 @@
         </div>
         <img src="./public/image/bgcurver.png" alt="" class="aboutUs__background">
       </div>
-      <div class="menu">
+      <div id="menu" class="menu">
         <div class="menu__header">
           <div class="menu__header--wrape">
             <p class="menu__header--lable">Menu</p>
@@ -212,40 +223,105 @@
             <p class="dowload__text--title">Food Stalls with Persons but  to  Product marketing plane. </p>
             <p class="dowload__text--des">There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also specialized equipmentwith Persons but also  Just Food Stalls with Persons.</p>
             <div class="dowload__groupButton">
-              <button class="dowload__groupButton--left"><img src="./public/image/apple 1.png" alt=""><p>App Store</p></button>
+              <button class="dowload__groupButton--left"><img src="./public/image/apple 1.png" alt=""><a href="https://www.apple.com/app-store/">App Store</a></button>
               <button class="dowload__groupButton--right"> <img src="./public/image/chPlay.png" alt=""><p>Google Play</p></button>
             </div>
           </div>
           <img  class="dowload__image" src="./public/image/phone.png"></img>
         </div>
       </div>
+
+
       <div class="testimonate">
-        <div class="testimonate__content">
-          <div class="testimonate__header">
-            <p class="testimonate__header--lable">Testimonial</p>
-            <p class="testimonate__header--title">Making Food great again and again</p>
-            <p class="testimonate__header--des">You need not only
-               Just Food Stalls with Persons but also specialized 
-               equipment, Skills to manage Customers, Effective Product
-                catlogues etc to make your.
-              </p>
-          </div>
-          <div class="testimonate__side">
-            <img src="./public/image/logo-gir.png" alt="" class="testimonate__side--image">
-            <p class="testimonate__side--des">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc very successful to make your.</p>
-            <div class="testimonate__side--groupStar">
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p class="testimonate__side--title">Augusta W. Reynoso</p>
-            <p class="testimonate__side--lable">UI&UX DeSIGNER</p>
-          </div>
+        <div class="testimonate__content--button">
+          <div class="Hero__buttonSide">
+            <div class="Hero__buttonSide--pre"><i class="fa-solid fa-angle-left"></i></div>
+          <div class="Hero__buttonSide--next"><i class="fa-solid fa-chevron-right"></i></div>
+         </div>
         </div>
+        <div class="testimonate__Group">
+          <div class="testimonate__content" style="margin-left:-30px">
+            <div class="testimonate__header">
+              <p class="testimonate__header--lable">Testimonial</p>
+              <p class="testimonate__header--title">Making Food great again and again</p>
+              <p class="testimonate__header--des">You need not only
+                 Just Food Stalls with Persons but also specialized 
+                 equipment, Skills to manage Customers, Effective Product
+                  catlogues etc to make your.
+                </p>
+            </div>
+            <div class="testimonate__side">
+              <img src="./public/image/logo-gir.png" alt="" class="testimonate__side--image">
+              <p class="testimonate__side--des">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc very successful to make your.</p>
+              <div class="testimonate__side--groupStar">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="testimonate__side--title">Augusta W. Reynoso</p>
+              <p class="testimonate__side--lable">UI&UX DeSIGNER</p>
+            </div>
+          </div>
+<!--  -->
+<div class="testimonate__content" >
+  <div class="testimonate__header">
+    <p class="testimonate__header--lable">Testimonial</p>
+    <p class="testimonate__header--title">Making Food great again and again</p>
+    <p class="testimonate__header--des">You need not only
+       Just Food Stalls with Persons but also specialized 
+       equipment, Skills to manage Customers, Effective Product
+        catlogues etc to make your.
+      </p>
+  </div>
+  <div class="testimonate__side">
+    <img src="./public/image/logo-gir.png" alt="" class="testimonate__side--image">
+    <p class="testimonate__side--des">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc very successful to make your.</p>
+    <div class="testimonate__side--groupStar">
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+    <p class="testimonate__side--title">Augusta W. Reynoso</p>
+    <p class="testimonate__side--lable">UI&UX DeSIGNER</p>
+  </div>
+</div>
+<!--  -->
+<div class="testimonate__content" style="margin-left: -100px;" >
+  <div class="testimonate__header">
+    <p class="testimonate__header--lable">Testimonial</p>
+    <p class="testimonate__header--title">Making Food great again and again</p>
+    <p class="testimonate__header--des">You need not only
+       Just Food Stalls with Persons but also specialized 
+       equipment, Skills to manage Customers, Effective Product
+        catlogues etc to make your.
+      </p>
+  </div>
+  <div class="testimonate__side">
+    <img src="./public/image/logo-gir.png" alt="" class="testimonate__side--image">
+    <p class="testimonate__side--des">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc very successful to make your.</p>
+    <div class="testimonate__side--groupStar">
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+    <p class="testimonate__side--title">Augusta W. Reynoso</p>
+    <p class="testimonate__side--lable">UI&UX DeSIGNER</p>
+  </div>
+</div>
+
+        </div>
+       
       </div>
-      <div class="contact">
+
+
+
+      <div id="contact" class="contact">
         <div class="contact__background">
         </div>
         <div class="contact__content">
@@ -301,6 +377,7 @@
       </div>
     </div>
   </body>
+  <script src="./public/javascript/search.js"></script>
   <script  src="./public/javascript/index.js"></script>
   <script  src="./public/javascript/slide.js"></script>
   <script  src="./public/javascript/slides.js"></script>

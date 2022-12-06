@@ -12,11 +12,6 @@ function detail(id){
   window.location = `../../page/PageDetail.html?id=${id}`
   }
 
-fetch("http://localhost:3000/api/catalogy/showList")
-  .then((Response) => Response.json())
-  .then((data) => {
-    console.log(data) 
-})
 
 fetch("http://localhost:3000/api/catalogy/showList")
   .then((Response) => Response.json())
@@ -57,17 +52,23 @@ fetch("http://localhost:3000/api/catalogy/showList")
       button.append(Ibutton);
       let form = document.createElement("div");
       let div_group = document.createElement("div");
-      div_group.setAttribute("class", "menu__item-groupStar");
+      div_group.setAttribute("class", "menu__item_groupStar");
+      div_group.setAttribute("id", `${e._id}`);
       let i1 = document.createElement("i");
       i1.setAttribute("class", "fa-regular fa-star");
+      i1.setAttribute('onclick',`like('${e._id}',${1})`)
       let i2 = document.createElement("i");
       i2.setAttribute("class", "fa-regular fa-star");
+      i2.setAttribute('onclick',`like('${e._id}',${2})`)
       let i3 = document.createElement("i");
       i3.setAttribute("class", "fa-regular fa-star");
+      i3.setAttribute('onclick',`like('${e._id}',${3})`)
       let i4 = document.createElement("i");
       i4.setAttribute("class", "fa-regular fa-star");
+      i4.setAttribute('onclick',`like('${e._id}',${4})`)
       let i5 = document.createElement("i");
       i5.setAttribute("class", "fa-regular fa-star");
+      i5.setAttribute('onclick',`like('${e._id}',${5})`)
       div_group.append(i1, i2, i3, i4, i5);
       div_end.append(button, div_group);
       div_item.append(image, div_title, p_des, div_end);
@@ -78,6 +79,22 @@ fetch("http://localhost:3000/api/catalogy/showList")
     console.log(error);
   });
 
+
+  ///
+  let j = 0
+  function like(id,x){
+  let a =  document.getElementById(`${id}`)
+  console.log(a)
+let paren = a.parentElement
+ let fa =  paren.querySelectorAll('.fa-star')
+ fa.forEach(e=>{
+  e.style.color = 'black'
+ })
+ for(let i = 0 ; i <x; i++){
+  fa[i].style.color = 'yellow'
+ }
+
+  }
 
   function loadStore(){
     let html = "";
